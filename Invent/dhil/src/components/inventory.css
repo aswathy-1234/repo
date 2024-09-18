@@ -1,0 +1,239 @@
+/* Container and Layout */
+.container-fluid.bg-2.text-center {
+  padding: 20px;
+  background-color: #f0f0f0; /* light gray background */
+}
+
+.col-sm-8, .col-sm-4 {
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333; /* dark gray text */
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333; /* dark gray text */
+}
+
+/* Table Styles */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-bordered {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px;
+  margin: 20px;
+}
+
+.table-bordered th, .table-bordered td {
+  width: auto;
+  padding: 15px; /* Reduced padding for smaller table cells */
+  text-align: left;
+  border: 1px solid #ddd; /* light gray border */
+}
+
+.table-bordered th {
+  background-color: #f5f5f5; /* light gray background */
+}
+
+.table-bordered td:last-child {
+  text-align: center; /* center the "View Product" button */
+}
+
+.center-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between buttons */
+  margin: 70px auto;
+}
+
+/* Form Controls */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* light gray border */
+}
+
+.form-control:focus {
+  border-color: #aaa; /* dark gray border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn { /* Base button style */
+  color: #fff; /* white text */
+  padding: 8px 16px; /* Smaller padding for smaller buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+}
+
+.btn-success {
+  background-color: #5cb85c; /* green background */
+}
+
+.btn-success:hover {
+  background-color: #4cae4c; /* darker green background */
+}
+
+.btn-warning {
+  background-color: #f0ad4e; /* orange background */
+}
+
+.btn-warning:hover {
+  background-color: #ec971f; /* darker orange background */
+}
+
+.btn-danger {
+  background-color: #d9534f; /* red background */
+}
+
+.btn-danger:hover {
+  background-color: #c9302c; /* darker red background */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* gray background */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* darker gray background */
+}
+
+.btn-primary {
+  background-color: #5cb85c; /* green background */
+}
+
+.btn-primary:hover {
+  background-color: #4cae4c; /* darker green background */
+}
+
+.btn-bottom {
+  margin-bottom: 20px;
+}
+
+/* Additional Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.add-product-page {
+  /* background-image: url('https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+  background-size: cover; /* make the image cover the full height and width of the page */
+  height: 100vh; /* make the background cover the full height of the page */
+  width: 100vw; /* make the background cover the full width of the page */
+}
+
+.product-list-page {
+  /* background-image: url('https://images.pexels.com/photos/7794441/pexels-photo-7794441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+  background-size: cover; /* make the image cover the full height and width of the page */
+  height: 200vh; /* make the background cover the full height of the page */
+  width: 100vw; /* make the background cover the full width of the page */
+}
+
+.disabled-input { /* Style for disabled inputs */
+  background-color: #fff; /* Set background color to match other inputs */
+  color: #333; /* Ensure the text color is the same */
+  border: 1px solid #ccc; /* Match the border with other fields */
+  padding: 10px; /* Same padding as other form controls */
+  box-shadow: none; /* Remove any shadow if there is one */
+}
+
+/* Specific Button Styles */
+.edit-button, .add-button, .reset-button {
+  color: #fff; /* white text */
+  padding: 8px 16px; /* Smaller padding for consistency */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.edit-button {
+  background-color: #f0ad4e; /* orange background, same as add button */
+}
+
+.add-button {
+  background-color: #f0ad4e; /* orange background */
+}
+
+.reset-button {
+  background-color: #d9534f; /* red background */
+}
+
+.center-btn-container .btn-primary {
+  margin-bottom: 20px;
+  position: relative;
+  top: -100px;
+}
+
+input[disabled] {
+  background-color: #fff; /* Set background color to match other inputs */
+  color: #333; /* Ensure the text color is the same */
+  border: 1px solid #ccc; /* Match the border with other fields */
+  padding: 10px; /* Same padding as other form controls */
+  box-shadow: none; /* Remove any shadow if there is one */
+}
+
+.center-btn-container .btn-secondary {
+  padding: 8px 16px; /* Adjust padding for consistency */
+  font-size: 14px; /* Adjust font size for consistency */
+}
+
+.center-btn-container .btn-secondary svg {
+  width: 14px; /* Adjust SVG width */
+  height: 16px; /* Adjust SVG height */
+}
+
+.add-product-page h1, .product-list-page h1 {
+  font-family: 'BricolageGrotesque', sans-serif;
+}
+
+
+.table-bordered td {
+  /* Previous: width: auto; */
+  width: 200px; /* Adjust this width as needed for your design */
+  padding:15px; 
+  text-align: left;
+  border: 1px solid #ddd; 
+}
+
+.form-control {
+  /* Previous: width: 100%; */
+  width: 97%; /* Adjust as needed to fit within the cell width */
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #ccc; 
+}
+
+/* inventory.css */
+.product-list-page .grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.product-list-page .grid-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-list-page .grid-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+}

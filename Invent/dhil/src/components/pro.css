@@ -1,0 +1,88 @@
+/* Page container */
+.product-details-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a responsive grid with cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Card styling */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Ensure card takes full width of its grid cell */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 10px; /* Reduce padding inside the card */
+    background-color: #fff;
+}
+
+/* Product title */
+.card-title {
+    font-size: 1.2em; /* Reduce the font size */
+    font-weight: bold;
+    margin-bottom: 8px; /* Reduce margin below title */
+}
+
+/* Product details */
+.card-text {
+    font-size: 1em; /* Reduce font size */
+    color: #555;
+    margin-bottom: 6px; /* Reduce margin below text */
+}
+
+/* Buy Now button styling */
+.product-card .btn-buy-now {
+    font-size: 0.8em; /* Smaller font size */
+    padding: 4px 8px; /* Smaller padding */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px; /* Spacing from other elements */
+}
+
+.product-card .btn-buy-now:hover {
+    background-color: #0056b3; /* Darker blue background */
+}
+
+/* Button container */
+.center-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set the height of the container */
+    margin-top: 100px; /* Reduce the margin to move the button upwards */
+}
+
+.center-btn-container .btn-primary {
+    background-color: #5cb85c; /* green background */
+    color: #fff; /* white text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+.center-btn-container .btn-primary:hover {
+    background-color: #4cae4c; /* darker green background */
+}
+
+.product-title {
+    font-family: 'BricolageGrotesque', sans-serif;
+}
